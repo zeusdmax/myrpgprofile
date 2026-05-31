@@ -1,8 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "api/*.js", "use": "@vercel/node" }
-  ],
+  "functions": {
+    "api/chat.js": { "runtime": "nodejs20.x" },
+    "api/guardar.js": { "runtime": "nodejs20.x" }
+  },
   "routes": [
     { "src": "/api/chat", "dest": "/api/chat.js" },
     { "src": "/api/guardar", "dest": "/api/guardar.js" },
