@@ -1,8 +1,8 @@
 {
   "version": 2,
   "functions": {
-    "api/chat.js": { "runtime": "nodejs20.x" },
-    "api/guardar.js": { "runtime": "nodejs20.x" }
+    "api/chat.js": {},
+    "api/guardar.js": {}
   },
   "routes": [
     { "src": "/api/chat", "dest": "/api/chat.js" },
